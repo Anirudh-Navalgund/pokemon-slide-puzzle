@@ -22,6 +22,11 @@ window.onload = function() { // loads tiles when page loads
       tile.src = imgOrder.shift() + ".jpg";  // assigns image source from array, removes it from array
 
       // DRAG FUNCITONS
+
+      tile.addEventListener("touchstart", touchStart);
+      tile.addEventListener("touchmove", touchMove);
+      tile.addEventListener("touchend", touchEnd);
+
       tile.addEventListener("dragstart", dragStart); //click a tile to drag
       tile.addEventListener("dragover", dragOver);   //moving tile around while clicked
       tile.addEventListener("dragenter", dragEnter); //dragging tile onto another one
@@ -33,6 +38,23 @@ window.onload = function() { // loads tiles when page loads
 
     }
   }
+}
+
+function touchStart(event) {
+  event.preventDefault();
+  curTile = this;
+}
+
+function touchMove(event) {
+  event.preventDefault();
+  // You may implement logic for moving tiles while touching and dragging.
+}
+
+function touchEnd(event) {
+  event.preventDefault();
+  otherTile = this;
+  dragEnd();
+  // Call your dragEnd function or perform the necessary logic here.
 }
 
 function dragStart() {
