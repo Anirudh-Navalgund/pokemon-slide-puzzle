@@ -7,7 +7,9 @@ body {
 }
 
 #title {
-  margin: 40px, auto, 0, auto;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
 }
 
