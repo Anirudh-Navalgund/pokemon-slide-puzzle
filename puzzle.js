@@ -12,7 +12,7 @@ var imgOrder = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
 //var imgOrder = ["3", "1", "7", "4", "0", "5", "6", "8", "2"];
 
 window.onload = function() { // loads tiles when page loads
-  alert("Welcome to the Pokemon Slide Puzzle.\nNote: Only the bottom-right tile can be swapped with any of it's adjacent tiles.");
+  alert("Welcome to the Pokemon Slide Puzzle.\nNote: Only the bottom-right tile can be swapped with any of it's adjacent tiles.\nBEST PLAYED ON PC/LAPTOP.");
   for (let r=0; r<rows; r++) {
     for (let c=0; c<columns; c++) {
       
